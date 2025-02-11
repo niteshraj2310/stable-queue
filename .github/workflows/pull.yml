@@ -18,7 +18,7 @@ jobs:
       run: |
         git config --global user.name "${GITHUB_USER}"
         git config --global user.email "${GITHUB_EMAIL}"
-        git clone https://"${GITHUB_USER}":"${GITHUB_TOKEN}"@github.com/AnggaR96s/stable-queue --single-branch -b master
+        git clone https://"${GITHUB_USER}":"${GITHUB_TOKEN}"@github.com/niteshraj2310/stable-queue --single-branch -b master
         cd stable-queue
         git fetch https://git.kernel.org/pub/scm/linux/kernel/git/stable/stable-queue.git master
         git rebase FETCH_HEAD
